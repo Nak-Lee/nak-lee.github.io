@@ -1,0 +1,178 @@
+<!DOCTYPE html> <!--22061086_이나경-->
+<html lang="en" dir="ltr">
+   <head>
+    <meta charset="utf-8">
+    <title>Studio Nak</title>
+    <style>
+    * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: '나눔스퀘어';
+        padding:10px;
+        background: #d2bcf9;
+      }
+      /*Header/Blog Title*/
+      .header {
+        padding: 30px;
+        text-align: center;
+        background: white;
+      }
+      .header h1 {
+        font-size:36px;
+      }
+      /*Style the top navigation bar*/
+      .topnav {
+        overflow:hidden; /*visible,scroll,auto*/
+        background-color: #8766ed;
+      }
+
+      /*Style the topnav Links*/
+      .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      /*Change color on hover*/
+      .topnav a:hover {
+        background-color: #d2bcf9;
+        color: black;
+      }
+
+      /*Creat two unequal columns that floats next to each other*/
+      /*Left column*/
+      .leftcolumn {
+        float:left;
+        width:75%;
+      }
+
+      /*Right column*/
+      .rightcolumn {
+        float: left;
+        width: 25%;
+        background-color: #d2bcf9;
+        padding-left: 20px;
+      }
+
+      /*Fake image*/
+      .fakeimg {
+        background-color: #fff;
+        width: 100%;
+        padding:20px;
+      }
+
+      /*Add a card effect for articles*/
+      .card {
+        background-color: white;
+        padding:20px;
+        margin-top:20px;
+      }
+
+      /*Clear float after the columns: 컬럼 다음에 float 해제*/
+      .row:after { /*before*/
+        content:""; /*row 다음에 content ""안에 있는 내용을 입력하시오.*/
+        display:table;
+        clear:both;
+      }
+
+      /*Footer*/
+      .footer {
+        font-family: 'Arial';
+        color: white;
+        padding: 20px;
+        text-align: center;
+        background: #8766ed;
+        margin-top: 20px;
+      }
+
+      /*Responsive layout - when the screen is less than 800px wide,
+      make the two columns stack on the top of each other instead of next to each other*/
+     @media screen and (max-width: 800px) {
+       .leftcolumn, .rightcolumn {
+         width: 100%;
+         padding:0;
+       }
+     }
+
+     /*Responsive layout - when the screen is less than 400px wide,
+     make the two columns stack on the top of each other instead of next to each other*/
+     @media screen and (max-width: 400px) {
+       .topnav a {
+         float: none;
+         width: 100%;
+       }
+     }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class='header'>
+        <h1>Studio Nak</h1>
+        <p>The world is her who nak it.</p>
+      </div>
+
+      <div class="topnav">
+        <a href="#">Programming</a>
+        <a href="a.html">3D Motion</a>
+        <a href="b.html">Design</a>
+        <a href="c.html" style="float:right">About Me</a>
+      </div>
+
+      <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <h2>레드벨벳 ‘The ReVe Festival' Day 1 2D 인포메이션</h2>
+            <h5>Programing 1-1, May 29, 2020</h5>
+            <p><img src='./img/mt1.jpg'></p>
+            <p>20 1학기 중간 프로젝트</p>
+            <p>1학년 1학기 프로그래밍의 미디어와 테크놀로지의 이해 과목의 중간 프로젝트입니다. 유니티엔진과 비주얼스튜디오 프로그램으로 작업했습니다.
+            <br>레드벨벳의 ‘The ReVe Festival' Day 1 앨범을 리뷰하는 2D 인포메이션을 만들었습니다.</p>
+          </div>
+          <div class="card">
+            <h2>과제 모음집 - 기적의 땅, 쉿 과제의 숲</h2>
+            <h5>Programing 1-1, Aug 22, 2020</h5>
+            <p><img src='./img/mtu.jpg'></p>
+            <p>20 1학기 기말 프로젝트</p>
+            <p>1학년 1학기 프로그래밍의 미디어와 테크놀로지의 이해 과목의 기말 프로젝트입니다. 유니티엔진과 비주얼스튜디오 프로그램으로 작업했습니다.
+              <br>키네틱 플로우의 몽환의 숲이란 노래에서 영감을 받아 기적의 땅, 과제의 숲이라는 몽환적인 터레인을 만들었습니다.
+              <br>각 위치에 과목과 결과물에 맞춰 꾸며주었습니다. 과목의 장소 스타일은 담당교수님의 평소 피피티 스타일이나 이미지에 맞춰 보았습니다.</p>
+          </div>
+          <div class="card">
+            <h2>앨범 리뷰 페이지 제작 - 블랙핑크 'The Album'</h2>
+            <h5>Programing 1-2, Oct 30, 2020</h5>
+            <p><img src='./img/cp1.jpg'></p>
+            <p>20 2학기 중간 프로젝트</p>
+            <p>1학년 1학기 프로그래밍의 콘텐츠 프로그래밍 과목의 중간 프로젝트입니다. 아톰 프로그램(html,css)으로 작업했습니다.
+            <br>블랙핑크의 'The Album' 앨범 리뷰 페이지를 제작했습니다.</p>
+          </div>
+        </div>
+        <div class="rightcolumn">
+          <div class="card">
+            <h2>About Me</h2>
+            <h5>UI/UX/BX/3D Motion Design</h5>
+            <p><img src='./img/pro.png'></p>
+            <p>즐거움이 담긴 디자인을 하는 디자이너,<br> 이나경입니다.</p>
+          </div>
+          <div class="card">
+            <h3>Popular Post</h3>
+            <div class="fakeimg"><p>● 레드벨벳 ‘The ReVe Festival' Day 1 2D 인포메이션</p></div>
+            <div class="fakeimg"><p>● 앨범 리뷰 페이지 제작 - 블랙핑크 'The Album'</p></div>
+            <div class="fakeimg"><p>● 과제 모음집 - 기적의 땅, 쉿 과제의 숲</p></div>
+          </div>
+          <div class="card">
+            <h3>Contact Me</h3>
+            <p>insta: @nakuniv</p>
+          </div>
+        </div>
+      </div> <!--class=row 는 cloumn 다음에 float 해제시키는 css가 있으므로
+        footer전에 float 해제를 css에 넣어놓은 것임-->
+      <div class="footer">
+        <p>Copyright 2020. NAK Lee All rights reserved.</p>
+      </div>
+  </body>
+</html>
