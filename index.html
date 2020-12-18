@@ -1,0 +1,185 @@
+<!DOCTYPE html> <!--22061086_이나경-->
+<html lang="en" dir="ltr">
+   <head>
+    <meta charset="utf-8">
+    <title>Studio Nak</title>
+    <style>
+    .wrap {
+      width: 1200px;
+      margin: 0px auto;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+      }
+    .clear {
+      clear:both;
+    }
+    body {
+    background-color: #262626;
+    color: white;
+    text-align: center;
+    }
+    li {
+    list-style-type: none;
+    }
+    header {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;
+    }
+    .logo {
+    float: left;
+    margin:30px;
+    padding-left:70px;
+    }
+    .menus {
+    float:right;
+    padding:18px;
+    height: 60px;
+    }
+    .main_menu {
+    margin-top: 20px;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: bold;
+    }
+    .main_menu li {
+    display: inline;
+    margin-left: 10px;
+    }
+    /*여기까지 헤더*/
+    .textcontainer {
+    padding: 50px;
+    margin-left: 50px;
+    height: 540px;
+    font-family: 'Montserrat';
+    }
+    .text {
+      font-family: 나눔스퀘어;
+      float: left;
+      text-align: left;
+      padding: 200px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .main_img {
+      float:right;
+    }
+    img {
+      width: 100%;
+    }
+    /*컨테이너 1*/
+    .folder {
+      text-align: center;
+      padding: 30px;
+      margin-left: 30px;
+      height: 500px;
+      font-family: 'Montserrat';
+    }
+    .card {
+      position: relative;
+      overflow: hidden;
+      display: inline-block;
+      margin: 50px;
+    }
+    /*컨테이너 2*/
+    .contact {
+      padding: 50px;
+      margin-left: 30px;
+      height: 500px;
+      font-family: 'Montserrat';
+    }
+    /*컨테이너 3*/
+    .footer {
+      width: 100%;
+      height: 80px;
+      font-family: 'Montserrat';
+      padding: 10px;
+      margin-top: 30px;
+      text-align: center;
+      background-color: #2f5597;
+    }
+    .row:after {
+      padding: 10px;
+      content:"";
+      display:table;
+      clear:both;
+    }
+
+   @media screen and (max-width: 800px) {
+     .wrap {
+       width: 100%;
+       padding:0;
+     }
+   }
+
+   @media screen and (max-width: 400px) {
+     .menus a {
+       float: none;
+       width: 100%;
+     }
+   }
+
+    a:link {color: #2f5597; text-decoration: none;}
+    a:hover {color: #8faadc; text-decoration: none;}
+    a {text-decoration: none; color: #2f5597;}
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class='logo'>
+        <img src='./img/logo.png'>
+      </div>
+      <nav class='menus'>
+         <ul class='main_menu'>
+           <li><a href="a.html">Portfolio</a></li>
+           <li><a href="b.html">Contact Me</a></li>
+         </ul>
+       </nav>
+    </header>
+    <div class="textcontainer">
+        <div class= "text">
+          <h2>즐거움이 담긴<br>
+            디자인을 하는</h2>
+          <h1>Designer.NAK Lee</h1>
+        </div>
+        <div class="main_img">
+          <img src="./img/main.png" style="float:right" alt="">
+        </div>
+    </div>
+      <!--다음 컨텐츠-->
+    <div class="folder">
+        <div class="card">
+          <div class="frame">
+            <a href="a.html">
+            <img src="./img/f.png"></a>
+          </div>
+           <p>Programming</p>
+        </div>
+        <div class="card">
+          <div class="frame">
+            <a href="cd.html">
+            <img src="./img/f.png"></a>
+          </div>
+           <p>Design</p>
+        </div>
+        <div class="card">
+          <div class="frame">
+            <a href="cg.html">
+            <img src="./img/f.png"></a>
+          </div>
+           <p>Planning</p>
+        </div>
+    </div>
+    <div class="contact">
+        <img src='./img/ct.png'>
+    </div>
+    <div class="footer">
+      <p>Copyright 2020. NAK Lee All rights reserved.</p>
+    </div>
+  </body>
+</html>
